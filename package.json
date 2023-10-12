@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:core": "turbo run build  --scope=core",
+    "build:react": "turbo run build  --scope=react",
+    "build:vue2": "turbo run build  --scope=vue2",
+    "build:vue3": "turbo run build  --scope=vue3",
+    "build:svelte": "turbo run build  --scope=svelte",
+    "dev:core": "turbo run dev  --scope=core",
+    "dev:react": "turbo run dev  --scope=react",
+    "dev:vue2": "turbo run dev  --scope=vue2",
+    "dev:vue3": "turbo run dev  --scope=vue3",
+    "dev:svelte": "turbo run dev  --scope=svelte",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "turbo": "latest",
+    "@turbo/gen": "latest",
+    "eslint": "latest",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "typescript": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "my-turborepo"
+}
